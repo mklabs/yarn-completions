@@ -1,0 +1,34 @@
+{
+  "name": "yarn-completions",
+  "version": "0.0.1",
+  "description": "Tabtab plugin to handle completion results for Yarn",
+  "bin": {
+    "completions-yarn": "bin/yarn-completions.js"
+  },
+  "repository": {
+    "url": "git@github.com:mklabs/yarn-completions.git",
+    "type": "git"
+  },
+  "author": "Mickael Daniel <daniel.mickael@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tabtab": "^2.2.0",
+    "yarn": "^0.15.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "npm-watch": "^0.1.6"
+  },
+  "watch": {
+    "babel": "lib/**/*.js"
+  },
+  "scripts": {
+    "postinstall": "tabtab install --name yarn --completer completions-yarn --auto",
+    "postuninstall": "tabtab uninstall --name yarn --auto",
+    "babel": "babel --presets babel-preset-es2015 lib/ -d src/",
+    "test": "export cmd=\"yarn \" && DEBUG=\"tabtab*\" COMP_POINT=\"4\" COMP_LINE=\"$cmd\" COMP_CWORD=\"$cmd\" completions-yarn completion -- yarn $cmd",
+    "prepublish": "npm run babel",
+    "watch": "npm-watch"
+  }
+}
