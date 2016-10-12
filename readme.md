@@ -7,7 +7,7 @@
 
 ## Install
 
-    npm i -g mklabs/yarn-completions
+    npm i -g yarn-completions
 
 On install, the package will add a line to source a SHELL specific config file,
 into either `~/.bashrc`, `~/.zshrc` or `~/.config/fish/config.fish`.
