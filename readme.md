@@ -123,3 +123,31 @@ devDependencies found in project's package.json
     $ yarn remove
     babel-preset-es2015  npm-watch  babel-cli  yarn
     lodash.intersection  user-home  tabtab     lodash  --
+
+`yarn why` completes all packages found in `node_modules` folder.
+
+    $ yarn why babel-
+    babel-code-frame                                      babel-cli
+    babel-generator                                       babel-core
+    babel-helper-call-delegate                            babel-helper-define-map
+    babel-helper-get-function-arity                       babel-helper-function-name
+    babel-helper-optimise-call-expression                 babel-helper-hoist-variables
+    babel-helper-replace-supers                           babel-helper-regex
+    babel-messages                                        babel-helpers
+    babel-plugin-transform-es2015-arrow-functions         babel-plugin-check-es2015-constants
+    babel-plugin-transform-es2015-block-scoped-functions  babel-plugin-transform-es2015-block-scoping
+    babel-plugin-transform-es2015-computed-properties     babel-plugin-transform-es2015-classes
+    babel-plugin-transform-es2015-duplicate-keys          babel-plugin-transform-es2015-destructuring
+    babel-plugin-transform-es2015-function-name           babel-plugin-transform-es2015-for-of
+    babel-plugin-transform-es2015-modules-amd             babel-plugin-transform-es2015-literals
+    babel-plugin-transform-es2015-modules-systemjs        babel-plugin-transform-es2015-modules-commonjs
+    babel-plugin-transform-es2015-object-super            babel-plugin-transform-es2015-modules-umd
+    babel-plugin-transform-es2015-shorthand-properties    babel-plugin-transform-es2015-parameters
+    babel-plugin-transform-es2015-sticky-regex            babel-plugin-transform-es2015-spread
+    babel-plugin-transform-es2015-template-literals       babel-plugin-transform-es2015-typeof-symbol
+    babel-plugin-transform-inline-imports-commonjs        babel-plugin-transform-es2015-unicode-regex
+    babel-plugin-transform-strict-mode                    babel-plugin-transform-regenerator
+    babel-preset-es2015                                   babel-polyfill
+    babel-register                                        babel-runtime
+    babel-traverse                                        babel-template
+    babel-types
