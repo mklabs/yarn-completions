@@ -7,6 +7,8 @@
 
 ## Install
 
+**with npm**
+
     npm i -g yarn-completions
 
 On install, the package will add a line to source a SHELL specific config file,
@@ -15,6 +17,14 @@ into either `~/.bashrc`, `~/.zshrc` or `~/.config/fish/config.fish`.
 On uninstall, these lines will be removed.
 
     npm uninstall yarn-completions -g
+
+**with yarn**
+
+    yarn global add yarn-completions
+
+Uninstall, with
+
+    yarn global remove yarn-completions
 
 ## Description
 
