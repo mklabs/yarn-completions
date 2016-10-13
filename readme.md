@@ -105,14 +105,21 @@ would make sense.
     $ yarn link
     yarn-completions  tiny-lr  tabtab  --
 
-`yarn unlink` completes based off the links found in `node_modules` folder.
+`yarn unlink` completes based off the links found in `node_modules` folder, and
+the one found in `~/.yarn-cache/.link`
 
     $ yarn unlink
     tabtab    --
 
+`yarn outdated` completes based off dependencies and devDependencies found in project's package.json
 
+    $ yarn outdated
+    babel-preset-es2015  npm-watch  babel-cli  yarn
+    lodash.intersection  user-home  tabtab     lodash  --
 
+same goes for `yarn remove`, completing based off dependencies and
+devDependencies found in project's package.json
 
-
-
-
+    $ yarn remove
+    babel-preset-es2015  npm-watch  babel-cli  yarn
+    lodash.intersection  user-home  tabtab     lodash  --
