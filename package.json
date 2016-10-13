@@ -12,7 +12,9 @@
   "author": "Mickael Daniel <daniel.mickael@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "lodash.intersection": "^4.4.0",
     "tabtab": "^2.2.0",
+    "user-home": "^2.0.0",
     "yarn": "^0.15.1"
   },
   "devDependencies": {

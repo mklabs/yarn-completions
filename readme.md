@@ -82,8 +82,11 @@ Example of completion results for zsh:
     --version          -V                                          -- output the version number
 
 Some commands have more granular completion handlers defined in their own
-completion file (in [lib/completions](./lib/completions)), such as the config
-one:
+completion file (in [lib/completions](./lib/completions)).  Slightly more
+elaborated completion handlers may be developped for each specific command that
+would make sense.
+
+`yarn config get` or `yarn config set`
 
     $ yarn config set
     ignore-optional      ignore-scripts    save-prefix
@@ -91,7 +94,25 @@ one:
     version-git-message  init-license      init-version
     version-tag-prefix   version-git-sign  version-git-tag  --
 
-Slightly more elaborated completion handlers may be developped, like completing `yarn run` with package.json's script fields for instance.
+`yarn run` that completes with package.json's script fields for instance.
+
+    $ yarn run
+    postuninstall  postinstall  prepublish  babel  test
+    watch                                                --
+
+`yarn link` completes based off the links found in `~/.yarn-cache/.link`.
+
+    $ yarn link
+    yarn-completions  tiny-lr  tabtab  --
+
+`yarn unlink` completes based off the links found in `node_modules` folder.
+
+    $ yarn unlink
+    tabtab    --
+
+
+
+
 
 
 
