@@ -1,6 +1,6 @@
 {
   "name": "yarn-completions",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Tabtab plugin to handle completion results for Yarn",
   "bin": {
     "completions-yarn": "bin/yarn-completions.js"
