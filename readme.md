@@ -83,7 +83,7 @@ Example of completion results for zsh:
 
 Some commands have more granular completion handlers defined in their own
 completion file (in [lib/completions](./lib/completions)).  Slightly more
-elaborated completion handlers may be developped for each specific command that
+elaborated completion handlers may be developed for each specific command that
 would make sense.
 
 `yarn config get` or `yarn config set`
