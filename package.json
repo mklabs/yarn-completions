@@ -15,7 +15,7 @@
     "lodash.intersection": "^4.4.0",
     "tabtab": "^2.2.0",
     "user-home": "^2.0.0",
-    "yarn": "^0.15.1"
+    "yarn": "^0.22.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
